@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉLLE | Your Soft Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <section id="login" class="panel">
+            <div class="logo">ÉLLE</div>
+            <p class="subtitle">YOUR SOFT SPACE</p>
+            <h1>Tu espacio personal</h1>
+            <p>Un lugar solo para ti.</p>
+
+            <form id="loginForm">
+                <label for="masterPassword">Contraseña principal</label>
+                <input id="masterPassword" type="password"
+                       placeholder="Ingresa tu contraseña" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+
+            <p id="loginMessage" class="message"></p>
+            <button id="setupButton" class="secondary" type="button">
+                Crear contraseña por primera vez
+            </button>
+        </section>
+
+        <section id="dashboard" hidden>
+            <header class="topbar">
+                <div>
+                    <div class="logo">ÉLLE</div>
+                    <p class="subtitle">YOUR SOFT SPACE</p>
+                </div>
+                <button id="logoutButton" class="secondary">Cerrar sesión</button>
+            </header>
+
+            <section class="welcome">
+                <p>BIENVENIDA A TU ESPACIO</p>
+                <h1>Un día a la vez.</h1>
+                <p>Organiza tus días, cuida de ti y guarda tus pensamientos.</p>
+            </section>
+
+            <nav class="menu">
+                <button data-section="tasks">Mis tareas</button>
+                <button data-section="planner">Mi día</button>
+                <button data-section="skincare">Skincare</button>
+                <button data-section="wellbeing">Bienestar</button>
+                <button data-section="diary">Mi diario</button>
+            </nav>
+
+            <section id="sectionContent" class="panel">
+                <h2>Tu espacio</h2>
+                <p>Selecciona una sección para comenzar.</p>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
